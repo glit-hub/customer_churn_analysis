@@ -94,7 +94,6 @@ To make insights accessible to non-technical audiences, a Tableau dashboard was 
 - City-level churn behavior and customer concentration
 - KPI-style visuals for quick executive interpretation
 
-**Tableau Public:** *(add your link here)*  
-**Jupyter Notebook:** *(add your GitHub link here)*  
+**Tableau Public:** *[Link](https://public.tableau.com/app/profile/glit.han/viz/Customer_Churn_Analysis_17671731743320/CustomerChurnAnalysis)*  
 
 ---
