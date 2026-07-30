@@ -2,6 +2,7 @@
 Author: Glit Hanpanitkitkan
 
 ### [Project File](https://github.com/glit-hub/customer_churn_analysis/blob/main/analysis.ipynb)
+### [Tableau](https://public.tableau.com/app/profile/glit.han/viz/Customer_Churn_Analysis_17671731743320/CustomerChurnAnalysis)
 
 ## Project Overview:
 **Research Question:** \
@@ -87,6 +88,22 @@ Because missing a churner can be costly in real business settings, recall for th
 It achieved the strongest ROC-AUC and the highest recall for churners among the tested models.
 
 ---
+
+## Limitations
+
+- **Moderate recall on churners:** Since missing a churner is the costliest error in a retention context, recall in the 0.38–0.54 range means a substantial share of true churners are still misclassified as staying, limiting how much the model can be trusted on its own for targeting interventions.
+- **Single, static dataset:** The analysis relies on one snapshot of IBM's Telco Customer Churn dataset. Churn drivers can shift over time (pricing changes, new competitors, macroeconomic conditions), so the model reflects this one period rather than an evolving customer base.
+- **No hyperparameter tuning:** The Decision Tree and Random Forest models were run with largely default or fixed settings (e.g., max_depth=3, n_estimators=100) rather than tuned via cross-validation or grid search.
+- **Correlation rather than causation:** Relationships identified (e.g., low monthly charges associated with higher churn) describe association, not causation, so business actions based on these features should be tested (e.g., via A/B tests) before wide rollout.
+- **No external validation:** The models were evaluated with a single train/test split on this dataset only; performance has not been validated against a separate time period, region, or company to confirm the findings generalize.
+
+---
+
+## How This Research Helps
+
+- **Prioritizes retention efforts:** By ranking which customer attributes (tenure, dependents, internet service, monthly charges, tech support, etc.) most relate to churn, the business can focus limited retention budget and outreach on the highest-risk segments instead of treating all customers the same.
+- **Supports proactive, not reactive, retention:** Because the model estimates churn probability before a customer leaves, teams (e.g., customer success, marketing) can intervene with offers, check-ins, or service upgrades ahead of cancellation rather than after.
+- **Makes insights usable beyond the data team:** The accompanying Tableau dashboard translates the statistical findings into an accessible, visual format so non-technical stakeholders can see churn concentration by city and track KPIs without needing to interpret the underlying models.
 
 ## Tableau Dashboard (Data Storytelling)
 To make insights accessible to non-technical audiences, a Tableau dashboard was built to highlight:
