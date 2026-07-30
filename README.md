@@ -1,6 +1,8 @@
 # Customer Churn Analysis
 Author: Glit Hanpanitkitkan
 
+### [Project File](https://github.com/glit-hub/customer_churn_analysis/blob/main/analysis.ipynb)
+
 ## Project Overview:
 **Research Question:** \
 What are the driving factors that help determine whether a customer stays or leave a telecommunications company? How can we predict whether a customer will churn based on these variables?
